@@ -1,0 +1,29 @@
+.NavLink {
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+  margin: 0.8rem;
+}
+
+@media (max-width: 990px) {
+  .NavLink {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 720px) {
+  .NavLink {
+    font-size: 1.35rem;
+    margin: 1.25rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .NavLink {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}

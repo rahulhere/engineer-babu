@@ -1,0 +1,33 @@
+.ProjectCard {
+  padding: 2rem;
+  border: 2px solid #f0f0f0;
+  text-align: left;
+  transition: box-shadow 0.7s;
+}
+
+.ProjectCard:hover {
+  box-shadow: 0 0 35px -10px #b4b4b4;
+}
+
+.ProjectCard .image {
+  min-height: 8rem;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.ProjectCard img {
+  max-width: 100%;
+}
+
+.ProjectCard p {
+  color: #444;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (max-width: 760px) {
+  .ProjectCard {
+    min-height: 270px;
+  }
+}

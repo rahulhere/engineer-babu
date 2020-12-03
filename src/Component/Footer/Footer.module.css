@@ -1,0 +1,319 @@
+.Footer {
+  margin: auto;
+  margin-top: 4rem;
+  max-width: 1140px;
+  text-align: left;
+}
+
+.Footer .LinkDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Footer .LinkDiv > div {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.Footer .LinkDiv > div h4 {
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.Footer .LinkDiv > div .HireDev2heading {
+  margin-top: 2.9rem;
+}
+
+.Footer .LinkDiv > div a {
+  display: block;
+  color: #444444c9;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  line-height: 2.2;
+}
+
+.Footer .LinkDiv > div a:hover {
+  text-decoration: underline;
+}
+
+.Footer .compRatingsMediaCont {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.Footer .CompRatings {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.Footer .Ratings {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  height: 42px;
+}
+
+.Footer .Ratings .Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2px;
+}
+
+.Footer .Ratings .Main span {
+  color: #444444e3;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1px;
+}
+
+.Footer .Ratings .Main img {
+  margin-top: 5px;
+  width: 5.1rem;
+}
+
+.Footer .Ratings .StarsRev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Footer .Ratings .StarsRev span {
+  font-size: 0.9rem;
+  color: #444444e3;
+  text-transform: uppercase;
+  margin-bottom: -3px;
+}
+
+.Footer .StarsRev .stars {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+.Footer .StarsRev .stars img {
+  width: 17px;
+}
+
+.Footer .CompImageDiv {
+  display: flex;
+}
+
+.Footer .CompImageDiv img {
+  height: 75px;
+  margin-right: 1rem;
+}
+
+.Footer .media {
+  display: flex;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+.Footer .media > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #cccccc;
+  border-radius: 100%;
+  margin-right: 5px;
+  transition: background-color 0.5s ease-out;
+}
+
+.Footer .media > div:hover {
+  background-color: #0054a5;
+}
+
+.Footer .media > div img {
+  width: 45%;
+}
+
+.Footer .NavCopyrightCont {
+  margin: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.Footer .copyRight p {
+  color: #444444c9;
+  font-weight: 600;
+}
+
+.Footer .navigation ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  font-weight: 400;
+}
+
+.Footer .navigation ul li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.Footer .navigation ul li a {
+  text-decoration: none;
+  color: #444444c9;
+  transition: color 0.5s;
+}
+
+.Footer .navigation ul li a:hover {
+  color: #0054a5;
+}
+
+@media (max-width: 1200px) {
+  .Footer {
+    max-width: 950px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .Footer {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .Footer {
+    max-width: 730px;
+  }
+
+  .Footer .LinkDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Footer .compRatingsMediaCont {
+    display: block;
+  }
+
+  .Footer .CompRatings {
+    margin-right: 0;
+  }
+
+  .Footer .Ratings {
+    margin-right: auto;
+  }
+
+  .Footer .CompImageDiv img {
+    margin-right: 1.5rem;
+  }
+
+  .Footer .media {
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .Footer .navigation ul li {
+    list-style: none;
+    margin-right: 1.3rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .Footer {
+    max-width: 560px;
+  }
+
+  .Footer .NavCopyrightCont {
+    display: block;
+    padding-left: 1rem;
+  }
+
+  .Footer .copyRight p {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 590px) {
+  .Footer .CompRatings {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .Footer .CompImageDiv {
+    margin-top: 2rem;
+    display: flex;
+  }
+}
+
+@media (max-width: 530px) {
+  .Footer .LinkDiv {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .Footer .LinkDiv > div .HireDev2heading {
+    margin-top: -3.1rem;
+  }
+
+  .Footer .Ratings {
+    justify-content: center;
+  }
+
+  .Footer .CompImageDiv {
+    justify-content: center;
+  }
+  .Footer .CompImageDiv img {
+    height: 75px;
+    margin: 0 0.5rem;
+  }
+
+  .Footer .media {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .Footer .media > div {
+    margin: 2.5px;
+  }
+
+  .Footer .copyRight p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .Footer .navigation ul {
+    justify-content: center;
+  }
+
+  .Footer .navigation ul li {
+    margin: 0.5rem;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Footer .media > div {
+    margin: 2.5px;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .Footer .navigation {
+    margin-top: 1rem;
+  }
+
+  .Footer .navigation ul {
+    height: auto;
+    flex-direction: column;
+    /* justify-content: start; */
+  }
+
+  .Footer .navigation ul li {
+    margin: 0.25rem;
+    font-size: 13px;
+  }
+}

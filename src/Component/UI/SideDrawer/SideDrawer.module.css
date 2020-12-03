@@ -1,0 +1,65 @@
+.SideDrawer {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 0 2rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s, opacity 0.5s;
+  overflow: auto;
+  z-index: 110;
+}
+
+.SideDrawer::-webkit-scrollbar {
+  width: 3px;
+}
+
+.SideDrawer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.SideDrawer .expertTalk {
+  border-radius: 5px;
+  color: white;
+  background-color: #0054a5;
+  padding: 1.5rem 2rem 1.7rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: auto;
+}
+
+.hide {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.SideDrawer .hamburger {
+  position: fixed;
+  right: 1px;
+  top: 35px;
+}
+
+.SideDrawer .hamburger > div {
+  background-color: black;
+  border: 1px solid black;
+}
+
+@media (max-width: 500px) {
+  .SideDrawer .expertTalk {
+    border: 2px solid;
+    border-color: #0054a5;
+    border-radius: 4px;
+    background-color: #0054a5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 6px 13px;
+    text-transform: uppercase;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+}

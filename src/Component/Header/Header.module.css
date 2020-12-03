@@ -1,0 +1,78 @@
+.Header {
+  display: flex;
+  align-items: center;
+  height: 5.5rem;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 100;
+}
+
+.Header img {
+  width: 55px;
+  margin: 0 2rem;
+  margin-right: auto;
+  filter: invert(1);
+  transition: all 0.5s;
+}
+
+.headerBodyResponsive {
+  display: flex;
+  align-items: center;
+}
+
+.Header .expertTalk {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 0.8rem 0.7rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 2.5rem;
+}
+
+.scrolled {
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 10px -8.5px black;
+}
+
+.scrolled .expertTalk {
+  color: #0054a5;
+  border: 2px solid #0054a5;
+}
+
+.scrolled img {
+  filter: invert(0.3) sepia(70%) saturate(1000%) hue-rotate(180deg);
+}
+
+.scrolled .hamburger > div {
+  background-color: black;
+  border: 1px solid black;
+}
+
+@media (max-width: 990px) {
+  .Header {
+    background-color: #0054a5;
+  }
+
+  .scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .headerBodyResponsive {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header img {
+    width: 40px;
+    height: 55px;
+  }
+}

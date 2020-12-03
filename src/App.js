@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
+import Layout from "./hoc/Layout/Layout";
+import Loader from "./Component/UI/Loader/Loader";
+import Home from "./Component/Home/Home";
+import AnotherPage from "./Component/AnotherPage/AnotherPage";
 
 function App() {
+  const [loader, setLoader] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (loader === null) {
+      setLoader(<Loader />);
+    }
+    setTimeout(() => {
+      // if (loader !== null) {
+      //   setLoader(null);
+      // }
+      setLoader(null);
+      console.log("here in timeoout", loader);
+    }, 2000);
+    // eslint-disable-next-line
+  }, [location]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        {loader}
+
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route>
+            <AnotherPage />
+          </Route>
+        </Switch>
+      </Layout>
     </div>
   );
 }

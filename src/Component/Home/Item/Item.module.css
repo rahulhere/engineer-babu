@@ -1,0 +1,32 @@
+.Item {
+  color: #444444;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  max-width: 350px;
+}
+.Item img {
+  width: 40px;
+}
+.Item .textDiv {
+  max-width: 250px;
+  text-align: left;
+}
+.Item .textDiv h4 {
+  margin: 0;
+}
+.Item .textDiv p {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .Item {
+    max-width: 320px;
+  }
+  .Item img {
+    width: 35px;
+  }
+  .Item .textDiv {
+    max-width: 185px;
+  }
+}

@@ -1,0 +1,150 @@
+.Head {
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 200;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  justify-items: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  height: 600px;
+}
+
+.Head .main {
+  margin-top: 2rem;
+  max-width: 560px;
+  padding: 0 2rem;
+}
+
+.Head .main > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+.Head .main > p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.Head .main > p + p {
+  margin-top: -1rem;
+}
+
+.Head .main > button {
+  outline: none;
+  margin-top: 1rem;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 26px;
+  transition: all 0.4s linear;
+}
+.Head .main > button:hover {
+  background: #ffffff;
+  color: #0054a5;
+}
+
+.Head .imageDiv {
+  position: relative;
+}
+
+.Head .imageDiv img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.Head .imageDiv .wave {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 340px;
+  height: 340px;
+  border-radius: 100%;
+  animation: pulsate 3s infinite;
+  top: 50%;
+  left: 50%;
+}
+
+@media (max-width: 1190px) {
+  .Head {
+    max-width: 990px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .Head {
+    height: 500px;
+  }
+}
+
+@media (max-width: 990px) {
+  .Head {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    text-align: center;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .Head .main {
+    margin-top: 0;
+    max-width: 650px;
+  }
+
+  .Head .imageDiv .wave {
+    top: 0;
+    left: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  .Head {
+    row-gap: 6.5rem;
+  }
+
+  .Head .main {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 490px) {
+  .Head {
+    row-gap: 7rem;
+    height: auto;
+    row-gap: 2rem;
+  }
+
+  .Head .imageDiv img {
+    display: none;
+  }
+
+  .Head .main > h2 {
+    font-size: 1.5rem;
+  }
+
+  .Head .main > p {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.9);
+  }
+}

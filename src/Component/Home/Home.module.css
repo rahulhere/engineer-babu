@@ -1,0 +1,311 @@
+.Home {
+  background-color: #fff;
+}
+
+.Home .HomeSection {
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  max-width: 1140px;
+  text-align: center;
+}
+
+.Home .HomeSection > h2 {
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #0054a5;
+  margin-bottom: 0;
+}
+
+.Home .HomeSection > p {
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #444444;
+  margin-top: 0.9rem;
+}
+
+.Home .ClientTypes {
+  margin: auto;
+  margin-top: -4rem;
+  margin-bottom: 8rem;
+  background-color: #fff;
+  max-width: 1140px;
+  box-shadow: 0 0 50px -15px black;
+  border-radius: 5px;
+  padding: 2rem 3rem;
+  color: #444444;
+  text-align: center;
+}
+
+.Home .ClientTypes > p {
+  margin: auto;
+  max-width: 900px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.Home .gridItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Home .ProductTypes .productGrid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Home .CarouselSection > p {
+  margin-bottom: 4rem;
+}
+
+.Home .CarouselSection .Slider {
+  margin: auto;
+  width: 67%;
+  min-width: 750px;
+}
+
+.Home .Projects {
+  color: #444444;
+}
+
+.Home .Projects > p {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  max-width: 670px;
+}
+
+.Home .Projects .ProjectItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.8rem;
+  column-gap: 1.2rem;
+}
+
+.Home .Testimonial .stars {
+  display: flex;
+  justify-content: center;
+}
+
+.Home .Testimonial .stars img {
+  margin: 0 2.5px;
+}
+
+.Home .Testimonial .YT {
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  width: 75%;
+}
+
+.Home .Testimonial .YT .videoWrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.Home .Testimonial .YT .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Home .Testimonial .TestimonialContainer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.Home .CompanyOverview {
+  margin-bottom: 8rem;
+}
+
+.Home .CompanyOverview .Overview {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Home .CompanyOverview .Overview .Text {
+  text-align: left;
+  width: 93%;
+}
+
+.Home .CompanyOverview .Overview .Text h2 {
+  margin-top: 0;
+  color: #444444;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.Home .CompanyOverview .Overview .Text h4 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: -1rem;
+}
+
+.Home .CompanyOverview .Overview .Text p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+.Home .CompanyOverview .Overview .Text p + p {
+  margin-top: 0;
+}
+
+.Home .CompanyOverview .Overview .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+.Home .CompanyOverview .Overview .image img {
+  height: 100%;
+  position: relative;
+  left: -25%;
+  transition: transform 0.5s ease;
+}
+
+.Home .CompanyOverview .Overview .image img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .Home .HomeSection {
+    max-width: 950px;
+  }
+
+  .Home .ClientTypes {
+    max-width: 950px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .Home .ClientTypes {
+    display: none;
+  }
+}
+
+@media (max-width: 1010px) {
+  .Home .HomeSection {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .Home .HomeSection {
+    max-width: 730px;
+  }
+
+  .Home .ProductTypes .productGrid {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Home .CarouselSection {
+    max-width: none;
+  }
+
+  .Home .CarouselSection .Slider {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .Home .Projects .ProjectItems {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.7rem;
+    column-gap: 1rem;
+  }
+
+  .Home .CompanyOverview .Overview {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .Home .CompanyOverview .Overview .Text {
+    width: 100%;
+  }
+
+  .Home .CompanyOverview .Overview .image img {
+    height: auto;
+    width: 100%;
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  .Home .HomeSection {
+    max-width: 560px;
+  }
+
+  .Home .CarouselSection {
+    max-width: none;
+  }
+
+  .Home .HomeSection > h2 {
+    font-size: 1.68rem;
+  }
+
+  .Home .HomeSection > p {
+    font-size: 1rem;
+  }
+
+  .Home .ProductTypes .productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Home .Projects .ProjectItems {
+    grid-template-columns: 1fr;
+  }
+
+  .Home .CompanyOverview .Overview .Text h2 {
+    font-size: 25px;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .Home .HomeSection > h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 550px) {
+  .Home .CompanyOverview .Overview .Text {
+    text-align: center;
+  }
+
+  .Home .CompanyOverview .Overview .Text h2 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 550px) {
+  .Home .CompanyOverview .Overview .Text h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .Home .CompanyOverview .Overview .Text h4 {
+    font-size: 16px;
+  }
+
+  .Home .CompanyOverview .Overview .Text p {
+    font-size: 15px;
+  }
+}
